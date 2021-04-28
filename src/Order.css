@@ -1,0 +1,18 @@
+.order {
+  padding: 40px;
+  margin: 20px 0;
+  border: 1px solid lightgray;
+  background-color: white;
+  position: relative;
+}
+/* time 8:00:00 */
+.order__id {
+  position: absolute; /* parent is relative thats why its staying inside container */
+  top: 40px;
+  right: 20px;
+}
+
+.order__total {
+  font-weight: 500;
+  text-align: right;
+}

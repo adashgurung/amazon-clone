@@ -1,0 +1,24 @@
+.home {
+  /* this code doesnt make page go side side ma, fixed banayera rakhcha */
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+}
+
+.home__row {
+  /* arranges home__rows, item haru row ma display garcha nicely,  */
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.home__image {
+  width: 100%;
+  z-index: -1; /* z-index: -1 use garyo vane behind everything; */
+  margin-bottom: -150px; /* margin -150 muni dekhi aru poster/elements haru dekhna milcha*/
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  /* mask-image gives faded effect(start from top to bottom, the 0,0,0,1 is saying go from complete color to 0,0,0,0 transparent see through */
+}

@@ -1,0 +1,82 @@
+.product {
+  display: flex; /* everything displays in row-horizontally */
+  flex-direction: column; /* now displays in column-vertically */
+
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  max-height: 400px;
+  min-width: 100px;
+
+  background-color: white;
+  z-index: 1; /* home page vanda agadi show huncha */
+}
+
+.product > img {
+  /* we can target product >img and change its size */
+
+  max-height: 200px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 15px; /* muni space dincha aru sanga chutincha */
+}
+
+.product__info {
+  /* do something here to arrange txt??? */
+
+  height: 100px;
+  margin-bottom: 15px;
+}
+.product__price {
+  margin-top: 5px;
+}
+
+.product__ratingStar {
+  display: flex; /* display:flex garyo vane by default it arranges into row */
+}
+
+.product__ratingNumber {
+  color: #0066c0;
+  margin-left: 6px;
+  margin-top: 4px;
+}
+
+.add__button {
+  background: #f0c14b;
+  border: 1px solid;
+  margin-top: 10px;
+  cursor: pointer;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+}
+
+/* align-self: stretch; yo hatayera bicha ma ayo
+  box-shadow: rgba(255, 255, 255, 0.6) 0px 1px 0px;
+}  
+
+/* .product > button {
+  background: linear-gradient(rgb(254, 230, 176), rgb(238, 186, 55))
+    rgb(254, 230, 176);
+  margin-top: 10px;
+  cursor: pointer;
+
+  border-width: 1px;
+  border-style: solid;
+
+  border-color: rgb(190, 149, 44) rgb(166, 130, 38) rgb(155, 121, 36);
+  border-radius: 3px;
+  vertical-align: middle;
+
+  overflow: hidden;
+  color: currentcolor;
+  transform: translate3d(0px, 0px, 0px);
+  height: 24px;
+  padding: 0px;
+  width: 150px;
+  text-align: center;
+
+  /* align-self: stretch; yo hatayera bicha ma ayo
+  box-shadow: rgba(255, 255, 255, 0.6) 0px 1px 0px;
+}  */

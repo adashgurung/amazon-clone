@@ -1,0 +1,35 @@
+.subtotal {
+  display: flex; /* display in a row */
+  flex-direction: column; /* now arrange in column */
+  justify-content: space-between;
+
+  width: 300px;
+  height: 100px;
+  padding: 20px; /* side side ma gap */
+
+  background-color: #f3f3f3;
+  border: 1px solid #dddddd; /* gives border line 1 px and border color */
+  border-radius: 3px; /* gives curved edges */
+}
+
+.subtotal__gift {
+  display: flex; /* arrange in row */
+  align-items: center; /* then arrange everything is straight line */
+}
+
+.subtotal__gift > input {
+  /* you can targt input inside subtotal_gift and change whatever */
+  margin-right: 5px; /* separates check box and text */
+}
+
+.subtotal > button {
+  background: #f0c14b;
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #a88737 #9c7e31 #846a29;
+  color: #111;
+  cursor: pointer;
+}
